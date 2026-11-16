@@ -24,6 +24,11 @@
 
       <jjwt.version>0.10.6</jjwt.version>
 
+      <!-- Override Spring Boot managed versions: logback-core < 1.5.37 is vulnerable (CVE-2026-13006).
+           logback 1.5.x requires SLF4J 2.x. -->
+      <logback.version>1.5.37</logback.version>
+      <slf4j.version>2.0.17</slf4j.version>
+
       <dockerfile-maven-plugin.version>1.4.12</dockerfile-maven-plugin.version>
    </properties>
 
